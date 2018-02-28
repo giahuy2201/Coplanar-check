@@ -31,8 +31,8 @@ int main()
 
 int match(int *icoor, int *coor)
 {
-    int y = (icoor[1]*coor[0] - coor[1]*icoor[0]) / (icoor[1]*icoor[3] - icoor[0]*icoor[4]);
-    int x = (coor[0] - icoor[3]*y) / icoor[0];
+    float y = (float)(icoor[1]*coor[0] - coor[1]*icoor[0]) / (icoor[1]*icoor[3] - icoor[0]*icoor[4]);
+    float x = (coor[0] - icoor[3]*y) / icoor[0];
     std::cout << "\nx: " << x << " y: " << y;
     int c = icoor[2]*x + icoor[5]*y;
 
