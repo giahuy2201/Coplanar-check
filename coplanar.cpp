@@ -7,7 +7,6 @@
 
 int match(int *icoor, int *coor);
 
-
 int main()
 {
     int *icoor = new int[6]; // to store 2 inital point
